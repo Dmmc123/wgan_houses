@@ -12,6 +12,9 @@ To get our pictures, we used ![selenium](https://github.com/SeleniumHQ/selenium)
 
 Hyper-parameters and algorithms do not differ much from the one presented in ![original paper](https://arxiv.org/abs/1701.07875), which is implemented in ![this notebook](https://github.com/Dmmc123/wgan_houses/blob/main/models/WGAN.ipynb), or ![original tutorial](https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html) which is implemented in ![this notebook](https://github.com/Dmmc123/wgan_houses/blob/main/models/DCGAN.ipynb).
 
+![animation](https://user-images.githubusercontent.com/54360024/145728988-9d770f8f-382d-41de-b448-4c533f0335a7.gif)
+
+
 ## Set-up
 
 1. First things first, make sure you have last version of our ![generator](https://drive.google.com/file/d/1-4OGlyFqEcRA9ayx1WLlUjAoQ2jdW34F/view?usp=sharing) and ![discriminator](https://drive.google.com/file/d/1-3yLZP5J3RVmREU72hOsoTWfJ1KWBvgu/view?usp=sharing) modules on your Google Drive
