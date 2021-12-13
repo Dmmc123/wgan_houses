@@ -3,9 +3,9 @@ import numpy as np
 
 img_shape = (3, 64, 64)
 
-class GeneratorBig(nn.Module):
+class Generator(nn.Module):
     def __init__(self):
-        super(GeneratorBig, self).__init__()
+        super(Generator, self).__init__()
 
         def block(in_feat, out_feat, normalize=True):
             layers = [nn.Linear(in_feat, out_feat)]
@@ -15,11 +15,11 @@ class GeneratorBig(nn.Module):
             return layers
 
         self.model = nn.Sequential(
-            *block(latent_dim, 128, normalize=False),
-            *block(128, 512),
-            *block(512, 2048),
-            *block(2048, 6144),
-            nn.Linear(6144, int(np.prod(img_shape))),
+            *block(latent_dim, 256, normalize=False),
+            *block(256, 1024),
+            *block(1024, 4096),
+            *block(4096, 16384),
+            nn.Linear(16384, int(np.prod(img_shape))),
             nn.Tanh()
         )
 
